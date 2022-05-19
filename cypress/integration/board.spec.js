@@ -10,13 +10,13 @@ describe("create organization", () => {
         cy.get(loginModel.email).type(dataBoard.user.email)
         cy.get(loginModel.password).type(dataBoard.user.pass)
         cy.get(loginModel.logInBtn).click();
-       
-      });
 
-     //positive
-     it("Add new board", () => {
-      
-        cy.get(boards.addNewBoardBtnDropdown).eq(1).click({force: true});
+    });
+
+    //positive
+    it("Add new board", () => {
+
+        cy.get(boards.addNewBoardBtnDropdown).eq(1).click({ force: true });
         cy.get(boards.addBoardBtn).eq(1).click();
         cy.get(boards.inputBoardName).eq(1).type(dataBoard.board.brdName)
         cy.get(boards.nextBtn).click();
@@ -34,7 +34,7 @@ describe("create organization", () => {
 
         cy.get("ul[class='vs-c-list vs-c-list--boards']").should('contain', dataBoard.board.brdName)
     })
-    
+
     it("Config board", () => {
         cy.get(boards.activeBoard).eq(0).click();
         cy.get(boards.editBoard).eq(8).click();
@@ -53,10 +53,11 @@ describe("create organization", () => {
 
     it.only("Delete board", () => {
         cy.get(boards.activeBoard).eq(0).click();
-        cy.get(boards.editBoard).eq(8).click({force: true});
+        cy.get(boards.editBoard).eq(8).click({ force: true });
         cy.get(boards.deleteBoard).click()
         cy.get(boards.confirmDeleteBrd).click()
 
         cy.get('.vs-c-organization-boards').should('not.have.value', dataBoard.board.editBrdName)
     })
+
 })

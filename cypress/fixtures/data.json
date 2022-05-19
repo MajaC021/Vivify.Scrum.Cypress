@@ -6,14 +6,12 @@
         "nonExistEmail": "nnn@ggg.com",
         "email": "test123@gmail.com",
         "pass": "Majovita1990"
-        
     },
     "org": {
         "orgName": "test",
         "editOrgName": "test123"
-
     },
-    "board":{
+    "board": {
         "brdName": "testB",
         "editBrdName": "testB123"
     }
