@@ -59,5 +59,4 @@ describe("create organization", () => {
 
         cy.get('.vs-c-organization-boards').should('not.have.value', dataBoard.board.editBrdName)
     })
-
 })
