@@ -8,7 +8,7 @@
     "createBtn": "button[name='next_btn']", 
     "previousBtn": "button[name='prev_btn']",
     "clickOrg": "div > span > a",
-    "clickConfig": "[data-cy='organization-configuration']",
+    "clickConfig": "li[data-cy='organization-configuration']",
     "deleteOrg": "button > span",
     "editOrg": "span[title='Edit Organization']",
     "changeOrgName":"input[name='change-organization-name']" ,
@@ -18,6 +18,7 @@
     "noticeOkClose": ".vs-c-modal--features-button > .vs-c-btn",
     "arhiveOrgBtn" : "span[title='Archive Organization']",
     "orgFromArhived": "class=['vs-c-my-organizations-item-wrapper vs-c-my-organizations-item-wrapper--archived']",
-    "deleteArhivedOrg": "div > button > span"
+    "deleteArhivedOrg": "div > button > span",
+    "infoBoardOk": "[class='vs-c-modal--features-button']"
 
 }
