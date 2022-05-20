@@ -11,6 +11,7 @@
     "edinBrdName": "input[type='text']",
     "saveUpdate": "button[type='submit']",
     "deleteBoard": "button[class='vs-c-btn vs-c-btn--warning vs-c-btn--spaced']",
-    "confirmDeleteBrd": "button[name='save-btn']",
+    "confirmDeleteBrd": "button[name='save-btn']", 
     "archiveBoard": "[class='el-tooltip'] > svg "
+    
 }
